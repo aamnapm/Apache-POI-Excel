@@ -41,7 +41,7 @@ public class Convert {
     }
 
     private static String getKey(Field field) {
-        String value = field.getAnnotation(Excel.class).nameFa();
+        String value = field.getAnnotation(Excel.class).header();
         return value.isEmpty() ? field.getName() : value;
     }
 
@@ -53,7 +53,7 @@ public class Convert {
             workbook.write(out);
             workbook.close();
 
-            map.put("CONTENT", out.toByteArray());
+            map.put("DATA", out.toByteArray());
             map.put("NAME", excelName);
             return map;
         } catch (IOException e) {
