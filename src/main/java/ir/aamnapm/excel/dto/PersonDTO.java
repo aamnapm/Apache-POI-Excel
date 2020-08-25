@@ -8,12 +8,12 @@ import lombok.Setter;
 @Getter
 public class PersonDTO {
 
-    @Excel(nameFa = "نام")
+    @Excel(header = "نام")
     private String name;
 
-    @Excel(nameFa = "نام خانوادگی")
+    @Excel(header = "نام خانوادگی")
     private String family;
 
-    @Excel(nameFa = "سن")
+    @Excel(header = "سن")
     private int age;
 }
