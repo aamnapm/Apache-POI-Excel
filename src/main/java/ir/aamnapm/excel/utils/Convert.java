@@ -59,7 +59,7 @@ public class Convert {
         } catch (IOException e) {
             e.printStackTrace();
             return null;
-//            throw new Exception(HRMException.ErrorType.InternalServerError, e.getCause() + "", "گزارش با مشکل مواجه شده است.");
+//            throw new Exception(Exception.ErrorType.InternalServerError, e.getCause() + "", "گزارش با مشکل مواجه شده است.");
         }
     }
 }

@@ -29,7 +29,7 @@ public class ExcelGenerator<T> {
 
         if (excelMap == null || excelHeaders == null || excelValues == null) {
             return null;
-//            throw new Exception(HRMException.ErrorType.InternalServerError, e.getCause() + "", "گزارش با مشکل مواجه شده است.");
+//            throw new Exception(Exception.ErrorType.InternalServerError, e.getCause() + "", "گزارش با مشکل مواجه شده است.");
         }
 
         Workbook workbook = new XSSFWorkbook();
